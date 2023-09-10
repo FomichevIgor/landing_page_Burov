@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init() {
+            var myMap = new ymaps.Map("map", {
+                center: [55.03496320744791, 82.91830312635415],
+                zoom: 16
+            });
+        }
+    </script>
+    <title>Burov</title>
+</head>
+
+<body>
+    <header class="header">
+
+
+        <div class="container">
+            <div><a class="name" href="">Буров Егор Владимирович</a></div>
+            <nav class="header_nav">
+
+                <lu class="header_nav_lu">
+                    <li class="header_nav_li"><a href="">Обо мне</a></li>
+                    <li class="header_nav_li"><a href="">Консультации</a></li>
+
+                    <li class="header_nav_li"><a href="">Контакты</a></li>
+                </lu>
+
+            </nav>
+            <a href="" class="button">Записаться на прием</a>
+
+        </div>
+
+    </header>
+    <div class="content">
+        <div class="container_content">
+            <div class="content_main">
+                <div><img class="foto" src="/images/5e82d7b1b56ffa2cd9538f7e_5e9532a78193b.jpg" alt="foto"></div>
+                <div class="content_main_discription">
+                    <p>Буров Егор Владимирович работает в сфере ортопедии и травматологии.
+                        Он работает с болезнями опорно-двигательного аппарата.
+                        Прогрессивные техники, применяемые врачами этого профиля,
+                        позволяют компенсировать не только приобретенные травмы и деформации костей, но и врожденные.
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="content_main_education">Образование</h3>
+                <div class="content_main_education_items">
+                    <div>
+                        <ul>
+                            <li class="item_li"> Новосибирский государственный медицинский университет (педиатрия) (2008
+                                г.).</li>
+                            <li>Новосибирский государственный медицинский университет (травматология и ортопедия) (2009
+                                г.).</li>
+                            <li>Курсы повышения квалификации
+                                ФГБУ «Российский научный центр «Восстановительной травматологии и ортопедии» имени
+                                академика
+                                Г.А. Илизарова». Курс «Гнойная остеология», г. Курган (2012 г.).</li>
+                            <li>Новосибирский государственный медицинский университет (травматология и ортопедия) (2014
+                                г.).</li>
+                            <li> "Базовый курс по артроскопии коленного сустава”, г. Москва (2014 г.).</li>
+                            <li>AO Trauma базовый курс – «Принципы лечения переломов» (2015 г.).</li>
+                            <li> Cadaver-курс «Авторский курс по артроскопии коленного сустава Зайцева Р.В.», г. Казань
+                                (2015 г.).</li>
+                            <li>Новосибирский государственный медицинский университет (травматология и ортопедия) (2019
+                                г.).</li>
+
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li>Cadaver-курс «Базовый курс по артроскопии плечевого сустава», г. Казань (2016 г.).</li>
+                            <li>Cadaver-курс « Хирургические доступы при повреждениях костей таза», г. Екатеринбург
+                                (2016 г.).</li>
+                            <li>Cadaver-курс «Базовый курс по артроскопии локтевого и голеностопного суставов», г.
+                                Казань (2016 г.).</li>
+                            <li>«Лечение переломов проксимального отдела бедренной кости интрамедуллярными штифтами
+                                INTERTAN», г.
+                                Екатеринбург (2017 г.).</li>
+                            <li>Cadaver-курс « Артоскопическая хирургия плечевого и коленного суставов», Германия г.
+                                Мюнхен (2017
+                                г.).</li>
+                            <li>Cadaver-курс « Хирургическое лечение патологии стопы и голеностопного сустава», Германия
+                                г. Мюнхен
+                                (2018 г.).</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <p>
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content_consultation">
+        <div class="container_consultation_main">
+            <h3 class="content_consultation_h3">Консультации</h3>
+            <div class="content_consultation_items">
+                <div>
+                    Медицинский консультативный центр на Красном проспекте
+                    <p>Новосибирск, Красный проспект, 52, 1 этаж
+                        Район Центральный</p>
+
+                </div>
+                <div>
+                    Томографический центр и травматологический пункт Евромед на Красном проспекте
+                    <p>Новосибирск, Красный проспект, 200, 1 этаж
+                        Район Заельцовский</p>
+                    <ul>
+                        <li> +7 (383) 209-03-03 Единая справочная</li>
+                        <li>+7 (383) 207-83-04</li>
+                        <li>+7 (383) 207-87-97</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contacts">
+        <h3 class="contacts_education">Контакты</h3>
+        <div class="contacts_main_container">
+
+            <div id="map">
+
+            </div>
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A015451465042cb52e3fff820200c007cfb0a130390378f1315571ccca5d0b00d&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+            <p>Красный проспект, 52, 1 этаж
+                Район Центральный</p>
+                <ul>
+                <li>+7 (383) 310-03-40</li>
+                <li>+7 (383) 229-10-14</li>
+                <li> +7 (383) 222-52-21</li>
+                <li>+7 (383) 222-48-17</li>
+            </ul>
+            <div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+
+    </footer>
+</body>
+
+</html>
