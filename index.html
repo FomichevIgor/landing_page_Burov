@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
-    
+
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
     </script>
     <script type="text/javascript">
@@ -13,9 +13,24 @@
         function init() {
             var myMap = new ymaps.Map("map", {
                 center: [55.03496320744791, 82.91830312635415],
-                zoom: 16
+                zoom: 16,
+                controls: []
             });
+
         }
+      
+
+    </script>
+    <script type="text/javascript">
+            ymaps.ready(init);
+                    function init() {
+                        var myMap = new ymaps.Map("map2", {
+                            center: [55.063324707851905, 82.90922354847214],
+                            zoom: 16,
+                            controls: []
+                        });
+                    }
+
     </script>
     <title>Burov</title>
 </head>
@@ -29,10 +44,10 @@
             <nav class="header_nav">
 
                 <lu class="header_nav_lu">
-                    <li class="header_nav_li"><a href="">Обо мне</a></li>
+
                     <li class="header_nav_li"><a href="">Консультации</a></li>
 
-                    <li class="header_nav_li"><a href="">Контакты</a></li>
+
                 </lu>
 
             </nav>
@@ -56,7 +71,7 @@
                         Общая практика,
                         Высшая категория.
                         <b>Профессиональный стаж
-                        15 лет</b>
+                            15 лет</b>
                     </p>
                 </div>
             </div>
@@ -119,46 +134,44 @@
             <h3 class="content_consultation_h3">Консультации</h3>
             <div class="content_consultation_items">
                 <div>
-                    Медицинский консультативный центр на Красном проспекте
-                    <p>Новосибирск, Красный проспект, 52, 1 этаж
+                    <p>Медицинский консультативный центр на Красном проспекте
+                        Новосибирск, Красный проспект, 52, 1 этаж
                         Район Центральный</p>
+                    <ul>
+                        <li>+7 (383) 310-03-40</li>
+                        <li>+7 (383) 229-10-14</li>
+                        <li> +7 (383) 222-52-21</li>
+                        <li>+7 (383) 222-48-17</li>
+                    </ul>
+                    <div id="map" class="map">
+                        <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A015451465042cb52e3fff820200c007cfb0a130390378f1315571ccca5d0b00d&amp;width=400&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
 
+                    </div>
+
+                    <div><a href="" class="button">Записаться на прием</a></div>
                 </div>
+
                 <div>
-                    Томографический центр и травматологический пункт Евромед на Красном проспекте
-                    <p>Новосибирск, Красный проспект, 200, 1 этаж
+                    <p>Томографический центр и травматологический пункт Евромед на Красном проспекте
+                        Новосибирск, Красный проспект, 200, 1 этаж
                         Район Заельцовский</p>
                     <ul>
                         <li> +7 (383) 209-03-03 Единая справочная</li>
                         <li>+7 (383) 207-83-04</li>
                         <li>+7 (383) 207-87-97</li>
                     </ul>
+                    <div id="map2" class="map2">
+                        <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad61f969fae33bb07abcc13e53b0b16a90ea7baaf9ff10c4ab606e5f470e82ff5&amp;width=400&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+
+                    </div>
+                    <div><a href="" class="button">Записаться на прием</a></div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="contacts">
-        <h3 class="contacts_education">Контакты</h3>
-        <div class="contacts_main_container">
-
-            <div id="map">
-
-            </div>
-            <script type="text/javascript" charset="utf-8" async
-                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A015451465042cb52e3fff820200c007cfb0a130390378f1315571ccca5d0b00d&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-            <p>Красный проспект, 52, 1 этаж
-                Район Центральный</p>
-            <ul>
-                <li>+7 (383) 310-03-40</li>
-                <li>+7 (383) 229-10-14</li>
-                <li> +7 (383) 222-52-21</li>
-                <li>+7 (383) 222-48-17</li>
-            </ul>
-            <div>
-
 
             </div>
         </div>
+        
 
     </div>
     <footer class="footer">
