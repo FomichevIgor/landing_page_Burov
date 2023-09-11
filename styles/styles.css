@@ -7,7 +7,7 @@ body{
 
 .header{
   width: 100%;
-    background-image: url(./images/5129974_20043.jpg) ;
+    background-image: url(../images/5129974_20043.jpg) ;
     background-repeat: no-repeat;
     background-size:cover ;
     padding-top: 20px;
@@ -120,7 +120,7 @@ body{
 
 
 .content_main_education_items div ul li:before{
-    content: url(/images/ok.png);
+    content: url(../images/ok.png);
 }
 
 .content_consultation_h3{
@@ -131,7 +131,7 @@ body{
 }
 .content_consultation{
     width: 100%;
-   background-image: url(/images/medical-and-healthcare-in-blue-color_1017-26807.avif);
+   background-image: url(../images/medical-and-healthcare-in-blue-color_1017-26807.avif);
     background-repeat: no-repeat;
     background-size:cover ;
     padding-top: 20px;
