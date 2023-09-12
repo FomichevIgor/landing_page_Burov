@@ -15,10 +15,10 @@
         });
 let center=[55.06344546388396,82.91238808348061];
         let placemark=new ymaps.Placemark(center,{},{
-            iconLayout:'default#image',
-            iconImageHref:'../images/location.png',
-            iconImageSize:[32,32],
-            iconImageOffset:[-10,-20]
+           // iconLayout:'default#image',
+            //iconImageHref:'../images/location.png',
+            //iconImageSize:[32,32],
+            //iconImageOffset:[-10,-20]
         })
 
         myMap.controls.remove('geolocationControl'); // удаляем геолокацию

@@ -15,10 +15,10 @@
         });
         let center=[55.03594449037161,82.91949246832982];
         let placemark=new ymaps.Placemark(center,{},{
-            iconLayout:'default#image',
-            iconImageHref:'../images/location.png',
-            iconImageSize:[32,32],
-            iconImageOffset:[-15,-20]
+           // iconLayout:'default#image',
+           // iconImageHref:'../images/location.png',
+            //iconImageSize:[32,32],
+            //iconImageOffset:[-15,-20]
         })
 
 

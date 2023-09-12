@@ -20,6 +20,7 @@ body{
    
 }
 .container{
+    width: 100%;
     height: inherit;
      display: flex;
     justify-content: space-between;
