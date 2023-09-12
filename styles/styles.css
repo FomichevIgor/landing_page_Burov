@@ -20,7 +20,7 @@ body{
    
 }
 .container{
-    width: 100%;
+    
     height: inherit;
      display: flex;
     justify-content: space-between;
@@ -58,7 +58,7 @@ body{
 .name{
     color: black;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 24px;
     text-decoration: none;
 }
 .button{
