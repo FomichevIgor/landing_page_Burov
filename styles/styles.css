@@ -14,7 +14,9 @@ body{
     
     padding-top: 20px;
     padding-bottom: 20px;
-    height: 30px;
+    height: 40px;
+    border-bottom: 2px solid silver;
+    border-top: 2px solid silver;
    
 }
 .container{
@@ -38,10 +40,10 @@ body{
     text-decoration: none;
     color: black;
     padding: 10px;
-    padding-left: 50px;
+    
     opacity: 0.8;
     transition: all .07s ease-in-out;
-    font-size: 18px;
+    font-size: 20px;
 }
 .header_nav_li a:hover{
     opacity: 1;
@@ -77,13 +79,16 @@ body{
 }
 .content{
     width: 100%;
-   
+   background-image: url(../images/paper-style-white-monochrome-background_52683-66443.png);
     background-repeat: no-repeat;
     background-size:cover ;
+    background-position: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 .foto{
+    margin-top: 50px;
+   
     height: 300px;
     width: 250px;
 }
@@ -128,17 +133,17 @@ body{
 .content_consultation_h3{
     text-align: center;
     font-size: 22px;
-    padding-top: 50px;
-    margin-bottom: 35px;
+    padding-top: 30px;
+    margin-bottom: 55px;
 }
 .content_consultation{
     width: 100%;
-   background-image: url(../images/medical-and-healthcare-in-blue-color_1017-26807.avif);
+   background-image: url(../images/8866036_25909.jpg);
     background-repeat: no-repeat;
     background-size:cover ;
     background-position: center;
    
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 20px;
 }
 .container_consultation_main{
@@ -148,7 +153,7 @@ body{
 }
 .content_consultation_items{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
    
 }
 .contacts_education{
@@ -157,16 +162,30 @@ body{
     padding-top: 50px;
     margin-bottom: 35px;
 }
-.map{
-    border-radius: 20px;
-    padding-bottom: 30px;
-   
-}
-[class*="copyrights-pane"] {
-    display: none !important;
-  }
+
+
 .footer{
     width: 100%;
     height: 50px;
     background: black;
 }
+.map{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border: solid silver 2px;
+    border-radius: 15px;
+
+}
+.map :first-child{
+    border-radius: 15px;
+}
+.consultation_item{
+   text-align: center;
+   width: 500px;
+   
+}
+[class*="copyrights-pane"] {
+    display: none !important;
+  }
