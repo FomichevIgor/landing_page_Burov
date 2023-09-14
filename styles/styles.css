@@ -91,6 +91,7 @@ body{
     background-position: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    border-bottom: 2px solid silver;
 }
 .foto{
     margin-top: 50px;
@@ -134,13 +135,175 @@ body{
 
 .content_main_education_items div ul li:before{
     content: url(../images/ok.png);
+    
 }
+
+/*//////////////////////////////////////////Сертификаты////////////////////////////*/
+
+.certificates_container{
+    width: 100%;
+    padding: 0;
+    background-color: rgb(162, 244, 244);
+}
+.certificates_container_main{
+     
+        padding-top:50px ;
+        padding-bottom:50px ;
+        margin-left: 12%;
+        margin-right: 12%;
+
+}
+.certificates_container_main_name{
+            font-size: 22px;
+            margin: 0;
+            text-align: center;
+            margin-bottom: 40px;
+}
+.certificates_container_main_content{
+       display: flex;
+      
+        padding: 20px;
+        border: 5px solid silver;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* Модальный (фон) */
+  .modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    padding-top: 100px; /* Расположение коробки */
+    left: 0;
+    top: 0;
+    
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полный высота */
+    overflow: auto; /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0,0,0); /* Цвет запасной вариант */
+    background-color: rgba(0,0,0,0.7); /* Черный с непрозрачностью */
+  }
+  
+  /* Модальное содержание (изображение) */
+  .modal-content {
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Заголовок модального изображения ( текст изображения) - та же ширина, что и изображение */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Добавить анимацию - величение модели */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* Кнопка закрытия */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Ширина изображения на меньших экранах */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+
+
+/*///////////////////////////////////Специализация//////////////////////////////////*/
+
+
+
+.container_specialization{
+    background: #F5F5F5;
+    border-bottom:2px solid silver ;
+    border-top:2px solid silver ;
+   
+   
+}
+.content_specialization{
+    margin-top: 0px;
+    
+    margin-left: 12%;
+    margin-right: 12%;
+    
+    
+}
+.specialization_discription{
+    padding-bottom: 10px;
+    
+}
+.specialization_discription ul li{
+    list-style-type: none;
+    font-size: 18px;
+    padding: 8px;
+    
+    
+}
+.specialization_discription ul li:before{
+    content: url(../images/free-icon-hygieia-1427626.png);
+    padding-right: 10px;
+    
+    
+}
+
 
 .content_consultation_h3{
     text-align: center;
     font-size: 22px;
     padding-top: 30px;
     margin-bottom: 55px;
+}
+.name_specialization{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 22px;
+}
+.content_specialization_wrap{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+
 }
 .content_consultation{
     width: 100%;
@@ -170,11 +333,7 @@ body{
 }
 
 
-.footer{
-    width: 100%;
-    height: 50px;
-    background: black;
-}
+
 .map{
     width: 400px;
     height: 400px;
@@ -195,3 +354,98 @@ body{
 [class*="copyrights-pane"] {
     display: none !important;
   }
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+body {
+  margin: 0;
+  height: 100%;
+  background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.button_container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+}
+
+.description, .link {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+}
+
+.description {
+  font-size: 35px;
+}
+
+.btn {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #222;
+  padding: 17px 60px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+}
+
+.btn span {
+  position: relative; 
+  z-index: 1;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #78c7d2;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.link {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.link a {
+  color: #000;
+  font-size: 25px; 
+}
+
+
+
+
+
+
+
+  .footer{
+    width: 100%;
+    height: 50px;
+    background: black;
+}
