@@ -17,7 +17,7 @@ body{
     z-index: 999;
     padding-top: 20px;
     padding-bottom: 20px;
-    height: 35px;
+    height: 30px;
     border-bottom: 2px solid silver;
     border-top: 2px solid silver;
    
@@ -40,16 +40,40 @@ body{
 
 }
 .header_nav_li a{
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     display: inline-block;
     text-decoration: none;
     color: black;
     padding: 10px;
-    
+    font-family: 'Noto Serif';
+    font-weight: bold;
     opacity: 0.8;
     transition: all 0.9s ease-in-out;
-    font-size: 20px;
+    font-size: 18px;
 }
+
+.link{
+  text-decoration:none;
+  position:relative;
+}
+
+.link:before{
+  position:absolute;
+  bottom: -3px;
+  content: " ";
+  border-bottom: 2px solid white;
+  transform: scale(0,1);
+  width:100%;
+  transition: transform 0.3s
+}
+
+.link:hover:before{
+  transform: scale(1,1);
+}
+
+
+
 .header_nav_li a:hover{
     opacity: 1;
     
@@ -62,9 +86,11 @@ body{
    
 }
 .name{
+  font-family: 'Noto Serif';
+    font-weight: bold;
     color: black;
-    font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
+    
     text-decoration: none;
 }
 
@@ -92,30 +118,41 @@ body{
     width: 250px;
 }
 .container_content{
+  
     margin-top: 50px;
     margin-left: 12%;
     margin-right: 12%;
+}
+br{
+  font-family: 'Noto Serif';
 }
 .content_main{
     display: flex;
     justify-content: space-around;
 }
 .content_main_discription{
-    width: 300px;
+    width: 350px;
     text-align: center;
     line-height: 30px;
     font-size: 18px;
+    font-family: 'Noto Serif', serif;
 
 }
 .content_main_education{
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
+    font-family: 'Noto Serif';
+    font-weight: bold;
     padding-top: 50px;
     margin-bottom: 35px;
 }
 .content_main_education_items{
     display: flex;
     justify-content: space-between;
+    
+    font-family: 'Noto Serif';
+    font-weight: 400;
+   
 
 }
 .content_main_education_items div ul li {
@@ -135,7 +172,11 @@ body{
 .certificates_container{
     width: 100%;
     padding: 0;
-    background-color: rgb(205, 232, 232);
+   /*background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+background-image: url(../images/medical-and-healthcare-in-blue-color_1017-26807.png);*/ 
+   background-color: rgb(205, 232, 232); 
 }
 .certificates_container_main{
       position: relative;
@@ -146,14 +187,16 @@ body{
 
 }
 .certificates_container_main_name{
-            font-size: 22px;
             margin: 0;
+            font-size: 20px;
+            font-family: 'Noto Serif';
+            font-weight: bold;
             text-align: center;
             padding-top: 30px;
             margin-bottom: 40px;
 }
 .certificates_container_main_content{
-       background-color: darkgray ;
+       background-color: rgba(169,169,169,0.4) ;
         position: relative;
        display: flex;
        justify-content: space-evenly;
@@ -173,6 +216,7 @@ body{
 }
 
 .show-certif{
+  font-family: 'Noto Serif';
   color: #fff;
   background-color: #5ca1e1;
   position: relative;
@@ -189,6 +233,7 @@ body{
   
 }
 .sticky{
+  font-family: 'Noto Serif';
   cursor: pointer;
   padding: 10px;
   margin-bottom: 20px;
@@ -210,6 +255,7 @@ body{
 }
 
 .button:after {
+  font-family: 'Noto Serif';
   content: '»';
   position: absolute;
   opacity: 0;  
@@ -358,6 +404,7 @@ body{
     
 }
 .specialization_discription{
+  font-family: 'Noto Serif';
     padding-bottom: 10px;
     
 }
@@ -377,7 +424,9 @@ body{
 .name_specialization{
     text-align: center;
     padding-top: 30px;
-    font-size: 22px;
+    font-size: 20px;
+    font-family: 'Noto Serif';
+    font-weight: bold;
 }
 .content_specialization_wrap{
     display: flex;
@@ -388,7 +437,9 @@ body{
 /*////////////////////////////////////Консультации/////////////////////////////////////////////////*/
 .content_consultation_h3{
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
+    font-family: 'Noto Serif';
+    font-weight: bold;
     padding-top: 30px;
     margin-bottom: 55px;
 }
@@ -435,6 +486,7 @@ body{
     border-radius: 15px;
 }
 .consultation_item{
+  font-family: 'Noto Serif';
    text-align: center;
    width: 500px;
   }
@@ -462,6 +514,7 @@ body{
     box-shadow: 0 5px 15px rgba(0,0,0,0.20);
   }
   .btn span {
+    font-family: 'Noto Serif';
     position: relative; 
     z-index: 1;
     color: white;
